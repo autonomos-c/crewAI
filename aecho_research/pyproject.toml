@@ -1,0 +1,20 @@
+[project]
+name = "aecho_research"
+version = "0.1.0"
+description = "aecho_research using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.79.4,<1.0.0"
+]
+
+[project.scripts]
+aecho_research = "aecho_research.main:run"
+run_crew = "aecho_research.main:run"
+train = "aecho_research.main:train"
+replay = "aecho_research.main:replay"
+test = "aecho_research.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
